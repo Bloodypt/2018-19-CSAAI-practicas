@@ -34,13 +34,13 @@ var v1 = document.getElementById("v1"),
     v3 = document.getElementById("v3"),
     v4 = document.getElementById("v4");
 
-v1.onmouseon = function () {v1.muted = false};
-v2.onmouseon = function () {v2.muted = false};
-v3.onmouseon = function () {v3.muted = false};
+v1.onmouseout = function () {v1.muted = true};
+v2.onmouseout = function () {v2.muted = true};
+v3.onmouseout = function () {v3.muted = true};
 
-v1.onmouseover = function () {v1.muted = true};
-v2.onmouseover = function () {v2.muted = true};
-v3.onmouseover = function () {v3.muted = true};
+v1.onmouseover = function () {v1.muted = false};
+v2.onmouseover = function () {v2.muted = false};
+v3.onmouseover = function () {v3.muted = false};
 
 var change = function (n) {
   v4.src = "https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente" + n.toString() +".mp4";
